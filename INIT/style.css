@@ -1,0 +1,1902 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: #5373e3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding-left: 15rem;
+    padding-right: 10rem;
+    justify-content: space-between;
+}
+
+
+.Nav-bars {
+    width: 20rem;
+    margin-right: 25rem;
+}
+
+.Nav-bars ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Nav-bars ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.Nav-icons {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hd-burger {
+    display: none;
+}
+
+label .menu {
+    position: absolute;
+    right: -0px;
+    top: -100px;
+    z-index: 100;
+    width: 120px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+
+}
+
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: rgb(70, 134, 252);
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+label .hamburger:after,
+label .hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(70, 134, 252);
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked+.menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+
+}
+
+label input:checked+.menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+label input:checked+.menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+
+}
+
+label input:checked+.menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+
+}
+
+label input:checked+.menu+ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
+}
+
+label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #f38630;
+    text-decoration: none;
+
+}
+
+
+section {
+    width: 100%;
+    padding-top: 9rem;
+    background-color: #5373e3;
+    height: 93rem;
+}
+
+.box {
+    width: 72rem;
+    margin-left: 8rem;
+    height: 43rem;
+    gap: 3rem;
+    margin-top: 0rem;
+    display: flex;
+
+}
+
+.boxe-1 {
+    width: 30rem;
+    height: 40rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    padding-top: 8rem;
+}
+
+.boxe-1 h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.boxe-1 h2 {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.boxe-1 p {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 17px;
+    width: 27rem;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 3rem;
+}
+
+.btn-2 {
+    background-color: #FFF;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    color: rgb(91, 139, 227);
+    width: 10rem;
+    padding-left: 2.3rem;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.btn-3 {
+
+    background-color: #0b2c4d;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    color: white;
+    width: 10rem;
+    padding-left: 1.9rem;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.boxe-2 {
+    width: 39rem;
+    display: flex;
+    gap: 3rem;
+    height: 40rem;
+    margin-top: 3rem;
+}
+
+.boxxe1 {
+    width: 20rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.boxx-1 {
+    height: 17rem;
+    background-color: #FFF;
+    border-radius: 7px;
+    color: black;
+    padding: 2rem;
+}
+
+.boxx-1 i {
+    color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 0.7rem;
+    background-color: #ff4829;
+}
+
+.boxx-1 h1 {
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.boxx-1 p {
+    line-height: 25px;
+    color: grey;
+    margin-top: 1rem;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.boxx-2 {
+    height: 17rem;
+    background-color: white;
+    border-radius: 7px;
+    padding: 2rem;
+}
+
+.boxx-2 i {
+    color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 0.7rem;
+    background-color: #00d1a6;
+
+}
+
+.boxx-2 h1 {
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.boxx-2 p {
+    line-height: 25px;
+    color: grey;
+    margin-top: 1rem;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.boxxe2 {
+    width: 20rem;
+    display: flex;
+    gap: 4rem;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+.boxx-3 {
+    height: 17rem;
+    background-color: #FFF;
+    border-radius: 7px;
+    color: black;
+    padding: 2rem;
+}
+
+
+.boxx-3 i {
+    color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 0.7rem;
+    background-color: #009aef;
+}
+
+
+
+.boxx-3 h1 {
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.boxx-3 p {
+    line-height: 25px;
+    color: grey;
+    margin-top: 1rem;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.boxx-4 {
+    height: 17rem;
+    background-color: #FFF;
+    border-radius: 7px;
+    color: black;
+    padding: 2rem;
+}
+
+.boxx-4 i {
+    color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #ffa035;
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 0.7rem;
+
+}
+
+.boxx-4 h1 {
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.boxx-4 p {
+    line-height: 25px;
+    color: grey;
+    margin-top: 1rem;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.box-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30rem;
+    background-color: #0b2c4d;
+    margin-top: 11rem;
+    color: #FFF;
+    flex-direction: column;
+    clip-path: ellipse(147% 100% at 115.96% 100%);
+}
+
+.box-2 h1 {
+    font-weight: 500;
+    font-size: 50px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.box-2 p {
+    font-size: 20px;
+    width: 44rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+article {
+    background-color: #f8f9fe;
+    height: 115rem;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    width: 65rem;
+    height: 27rem;
+    position: absolute;
+    top: -6rem;
+    gap: 1rem;
+    display: flex;
+}
+
+.one-1 {
+    height: 25rem;
+    width: 21rem;
+    background-color: white;
+    padding: 2rem;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #d3d3d3;
+}
+
+.one-1 i {
+    padding: 15px;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    height: 3.5rem;
+    width: 3.7rem;
+    font-size: 25px;
+    background-color: #7864e3;
+}
+
+ .sapa {
+    color: #7864e3;
+    font-weight: 400; 
+    margin-top: 100rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h2{
+    margin-top: 0.1rem;
+}
+
+h3{
+    margin-top: 1rem;
+}
+
+.one-1 p{
+    color: #000;
+  
+    margin-top: 1.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.aps{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.apps{
+    width: fit-content;
+    padding: 4px ;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #dddada;
+    background-color: #dddada;
+    color: #7864e3;
+    font-weight: 390;
+}
+
+.btn-4{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    background-color: #5373e3;
+    box-shadow: 1px 1px 5px #819af5;
+}
+
+.one-2{
+    height: 25rem;
+    width: 21rem;
+    background-color: white;
+    padding: 2rem;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #d3d3d3;
+}
+
+.one-2 i {
+    padding: 15px;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    height: 3.5rem;
+    width: 3.7rem;
+    font-size: 25px;
+    background-color:  #00d19e;
+}
+
+.sapas {
+    color:  #00d19e;
+    font-weight: 400;
+    /* border: 2px solid red; */
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.one-2 p{
+    color: #000;
+    margin-top: 1.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.aps-1{
+    display: flex;
+    width: 17rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+.apss-1{
+    display: flex;
+    width: 11rem;
+    margin-top: 1.4rem;
+    justify-content: space-between;
+}
+
+.apps1{
+    width: fit-content;
+    padding: 4px ;
+    background-color: rgb(154, 240, 213);
+    color: rgb(6, 134, 100);
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    border-radius: 15px;
+    box-shadow: rgb(221, 218, 218) 1px 1px 5px; 
+    font-weight: 390;
+}
+
+
+.btn-5{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    background-color: #00d19e;
+    box-shadow: 1px 1px 5px #00d19e;
+}
+
+.one-3{
+    height: 25rem;
+    width: 21rem;
+    background-color: white;
+    padding: 2rem;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #d3d3d3;
+}
+
+
+.one-3 i {
+    padding: 15px;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    height: 3.5rem;
+    width: 3.7rem;
+    font-size: 25px;
+    background-color: #ff8831;
+}
+
+
+.sapass {
+    color:  #ff8831;
+    font-weight: 400;  
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.one-3 p{
+    color: #000;
+    margin-top: 1.5rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.apps2{
+    width: fit-content;
+    padding: 4px ;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #dddada;
+    background-color: rgb(255, 229, 223);
+    font-weight: 390;
+    color: rgb(255, 136, 49);
+    background-color: rgb(255, 229, 223);
+}
+
+
+.btn-6{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    background-color:  #ff8831;
+    box-shadow: 1px 1px 5px  #ff8831;
+}
+
+
+.two{
+    width: 65rem;
+    margin-top: 35rem;
+    height: 20rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.two-1{
+    padding-top: 5rem;
+    width: 33rem;
+    height: 20rem;
+}
+.two-1 h1{
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.two-1 p{
+    margin-top: 1rem;
+    color: gray;
+    font-size: 18px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.two-2{
+    width: 30rem;
+    padding-top: 3rem;
+    height: 20rem;
+}
+
+.two-2 img{
+    max-width: 100%;
+}
+
+.three{
+    width: 65rem;
+    margin-top: 9rem;
+    height: 20rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.two-4{
+    width: 30rem;
+    padding-top: 3rem;
+    height: 20rem;
+}
+
+.two-4 img{
+    max-width: 100%;
+}
+
+.two-3{
+    padding-top: 5rem;
+    width: 33rem;
+    height: 20rem;
+    padding-left: 2rem;
+}
+
+.two-3 h1{
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.two-3 p{
+    margin-top: 1rem;
+    color: grey;
+    font-size: 18px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.four{
+        width: 65rem;
+        margin-top: 9rem;
+        height: 20rem;
+        display: flex;
+        gap: 1.5rem;
+}
+
+.foot{
+    width: 100%;
+    height: 65rem;
+    padding-top: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.foot h1{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.foot p{
+    margin-top: 1rem;
+    font-size: 25px;
+    width: 47rem;
+    color: black;
+    text-align: center;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.diver{
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+.btn-7{
+    display: flex;
+    border: none;
+    padding: 13px 20px;
+    background-color: #5373e3;
+    box-shadow: 1px 3px 5px #d3d3d3;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-8{
+    display: flex;
+    padding: 14px 15px;
+    margin-right: 12px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #0b2c4d;
+}
+
+
+
+.foot-1{
+    width: 50rem;
+    height: 45rem;
+    position: relative;
+    margin-top: 6rem;
+}
+
+.icon-1{
+    background-color: #fff;
+    width: 13%;
+    height: 6rem;
+    padding: 20px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+.icon-1 i {
+    font-size: 40px;
+    color: #5373e3;
+}
+
+.icon-2{
+    background-color: #fff;
+    width: 13%;
+    height: 6rem;
+    position: absolute;
+    left: 42rem;
+    top: 0;
+    padding: 20px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+.icon-2 i {
+    /* color: #0b2c4d; */
+    font-size: 40px;
+    color: #5373e3;
+}
+
+.icon-3{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 15rem;
+    top: 8rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-3 i {
+    font-size: 20px;
+    color: #5373e3;
+}
+
+
+.icon-4{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 29rem;
+    top: 8rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-4 i {
+    color: #0b2c4d;
+    font-size: 20px;
+    color: #5373e3;
+}
+
+
+.icon-5{
+    background-color: #fff;
+    width: 13%;
+    height: 6rem;
+    position: absolute;
+    padding: 20px;
+    top: 15rem;
+    left: -6rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+.icon-5 i {
+    font-size: 30px;
+    color: #5373e3;
+}
+
+.icon-6{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 9rem;
+    top: 17rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-6 i {
+    font-size: 20px;
+    color: #5373e3;
+}
+
+.icon-7{
+        background-color: #fff;
+        width: 13%;
+        height: 6rem;
+        padding: 20px;
+        padding-top: 2rem;
+        position: absolute;
+        left: 21rem;
+        top: 15rem;
+        padding-left: 2rem;
+        border-radius: 50%;
+        border: 1px solid #d3d3d3;
+        box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+    }
+
+    .icon-7 i {
+        font-size: 40px;
+        color: red;
+    }
+
+    
+.icon-8{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 34rem;
+    top: 17rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-8 i {
+    font-size: 20px;
+    color: #5373e3;
+}
+
+.icon-9{
+    background-color: #fff;
+    width: 13%;
+    height: 6rem;
+    position: absolute;
+    padding: 20px;
+    top: 15rem;
+    right: -5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+.icon-9 i {
+    font-size: 30px;
+    color: #5373e3;
+}
+
+
+.icon-3{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 15rem;
+    top: 8rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-3 i {
+    font-size: 20px;
+    color: #5373e3;
+}
+.icon-10{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 15rem;
+    top: 27rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-10 i {
+    font-size: 20px;
+    color: #5373e3;
+}
+
+.icon-11{
+    background-color: #fff;
+    width: 8%;
+    height: 3.4rem;
+    left: 29rem;
+    top: 27rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+
+.icon-11 i {
+    color: #0b2c4d;
+    font-size: 20px;
+    color: #5373e3;
+}
+
+
+.icon-12{
+    background-color: #fff;
+    width: 13%;
+    height: 6rem;
+    padding: 20px;
+    position: absolute;
+    top: 30rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+.icon-12 i {
+    /* color: #0b2c4d; */
+    font-size: 40px;
+    color: #5373e3;
+}
+
+.icon-13{
+    background-color: #fff;
+    width: 13%;
+    height: 6rem;
+    position: absolute;
+    left: 42rem;
+    top: 30rem;
+    padding: 20px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 50px 10px rgb(47 123 211 / 15%);
+}
+
+.icon-13 i {
+    font-size: 40px;
+    color: #5373e3;
+}
+.foooter{
+    width: 100%;
+    height: 76rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: rgb(248, 249, 254);
+    padding-top: 5rem;
+}
+
+
+.foooter h1{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 30px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.foooter p{
+    margin-top: 1rem;
+    color: gray;
+    font-size: 18px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.foooter-1{
+    background-color: rgb(20, 33, 77);
+    width: 60rem;
+    border-radius: 10px;
+    margin-top: 4rem;
+    height: 59rem;
+    padding: 35px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.foooter-one{
+    width: 4rem;
+}
+
+.ft-1 i{
+    padding: 8px;
+    width: 3.5rem;
+    background-color: rgb(154, 240, 213);
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    font-size: 33px;
+    padding-left: 0.5rem;
+    color: rgb(0, 177, 117);
+}
+
+
+.ft-2 i{
+    width: 3.5rem;
+    text-align: center;
+    padding: 8px;
+    font-size: 33px;
+    color: red;
+    border-radius: 50%;
+    background-color: rgb(255, 207, 216);
+}
+
+.ft-3{
+    font-size: 32px;
+    width: 3.5rem;
+    text-align: center;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(144, 239, 251);
+    color: rgb(0, 175, 204);
+}
+.foooter-one hr{
+    width: 3px;
+    color: white;
+    margin-top: 0.2rem;
+    background-color: white;
+    margin-left: 1.5rem;
+}
+
+.foooter-two{
+    width: 30rem;
+    height: fit-content;
+}
+
+.text-1{
+    margin-top: 1rem;
+}
+.text-1 h4{
+    color: rgb(216, 213, 213);
+    font-size: 16px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.text-1 h2{
+    color: white;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-1 p {
+    color: rgb(216, 213, 213);
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-2{
+    margin-top: 5.2rem;
+}
+
+.text-2 h4{
+    color: rgb(216, 213, 213);
+    font-size: 16px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.text-2 h2{
+    color: white;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-2 p {
+    color: rgb(216, 213, 213);
+    /* border: 2px solid red;    */
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-3{
+    margin-top: 5.5rem;
+}
+
+
+.text-3 h4{
+    color: rgb(216, 213, 213);
+    font-size: 16px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.text-3 h2{
+    color: white;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-3 p {
+    color: rgb(216, 213, 213);
+    /* border: 2px solid red;    */
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+}
+
+.footer-2 h1{
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.dier{
+    display: flex;
+    margin-top: 2rem;
+    width: 25rem;
+    justify-content: space-between;
+}
+
+.btn-12{
+    color: #56e456;
+    background-color: #fff;
+    height: 50px;
+    font-size: 16px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px #fff;
+}
+.btn-13{
+    color: #0d6efd;
+    background-color: #fff;
+    height: 50px;
+    font-size: 16px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px #fff;
+}
+
+.btn-14{
+    color: #f03535;
+    background-color: #fff;
+    height: 50px;
+    font-size: 16px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px #fff;
+}
+.footer-2 p{
+    margin-top: 1rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+footer{
+    width: 100%;
+    font-size: 14px;
+    padding: 50px;
+    color: white;
+    display: flex;   
+    justify-content: space-between;
+    height: 8rem;
+    background-color: #0b2c4d;
+}
+
+.bat{
+    text-decoration: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid red;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.bayo{
+    color: #0d6efd;
+}
+.foot-items ul{
+    display: flex;
+    width: 11rem;
+    justify-content: space-between;
+    color: rgb(216, 213, 213);
+    list-style-type: none;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;    
+}
+
+span{}
+
+@media (min-width: 320px) and (max-width:480px) {
+
+    header {
+        padding-left: 3rem;
+        padding-right: 0rem;
+    }
+
+    header img {
+        max-width: 100%;
+        width: 35%;
+    }
+
+    .Nav-bars {
+        display: none;
+    }
+
+    .Nav-icons {
+        display: none;
+    }
+
+
+    .hd-burger {
+        display: block;
+    }
+
+
+    section {
+        width: 100%;
+        height: 147rem;
+    }
+
+
+    .box {
+        width: 100%;
+        margin-left: 0rem;
+        flex-direction: column;
+        height: 105rem;
+        gap: 3rem;
+        margin-top: 0rem;
+        display: flex;
+
+    }
+
+    .boxe-1 {
+        width: 20rem;
+        height: 20rem;
+        padding-top: 0rem;
+        margin: 20px auto;
+    }
+
+    .boxe-1 h1 {
+        font-size: 25px;
+    }
+
+    .boxe-1 p {
+        font-size: 16px;
+        width: 19rem;
+    }
+
+    .boxe-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 75rem;
+        margin-top: 2rem;
+    }
+
+    .boxxe1 {
+        width: 20rem;
+        height: 37rem;
+        display: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+
+    .boxxe2 {
+        width: 20rem;
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto;
+        height: 37rem;
+        padding-top: 0rem;
+        flex-direction: column;
+    }
+
+    .boxx-3 {
+        height: 17rem;
+        background-color: #FFF;
+        border-radius: 7px;
+        color: black;
+        padding: 2rem;
+    }
+
+
+    .boxx-3 i {
+        color: white;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        font-size: 40px;
+        padding: 10px;
+        padding-left: 0.7rem;
+        background-color: #009aef;
+    }
+
+
+
+    .boxx-3 h1 {
+        font-weight: 500;
+        margin-top: 0.5rem;
+        font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+    .boxx-3 p {
+        line-height: 25px;
+        color: grey;
+        margin-top: 1rem;
+        font-size: 18px;
+        letter-spacing: -0.45px;
+        font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+
+    .boxx-4 {
+        height: 17rem;
+        background-color: #FFF;
+        border-radius: 7px;
+        color: black;
+        padding: 2rem;
+    }
+
+    .boxx-4 i {
+        color: white;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: #ffa035;
+        font-size: 40px;
+        padding: 10px;
+        padding-left: 0.7rem;
+
+    }
+
+    .boxx-4 h1 {
+        font-weight: 500;
+        margin-top: 0.5rem;
+        font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+    .boxx-4 p {
+        line-height: 25px;
+        color: grey;
+        margin-top: 1rem;
+        font-size: 18px;
+        letter-spacing: -0.45px;
+        font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+
+
+    .box-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+        background-color: #0b2c4d;
+        margin-top: 3rem;
+        color: #FFF;
+        flex-direction: column;
+        clip-path: ellipse(147% 100% at 115.96% 100%);
+    }
+
+    .box-2 h1 {
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    .box-2 p {
+        font-size: 20px;
+        width: 20rem;
+    }
+
+    article {
+        background-color: #f8f9fe;
+        height: 190rem;
+        position: relative;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .one {
+        width: 20rem;
+        height: fit-content;
+        position: absolute;
+        top: -6rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .one-1 {
+        height: 25rem;
+        width: 20rem;
+        background-color: white;
+        padding: 2rem;
+        color: #000;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px #d3d3d3;
+    }
+    .one-2{
+        height: 25rem;
+        width: 20rem;
+        background-color: white;
+        padding: 2rem;
+        color: #000;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px #d3d3d3;
+    }
+    
+    .one-3{
+        height: 25rem;
+        width: 20rem;
+        background-color: white;
+        padding: 2rem;
+        color: #000;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px #d3d3d3;
+    }
+    
+    .two{
+        width: 20rem;
+        margin-top: 78rem;
+        height: 36rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0rem;
+    }
+    
+        
+    .two-1{
+        padding-top: 0rem;
+        width: 20rem;
+        height: 16rem;
+    }
+    
+    .two-2{
+        width: 20rem;
+        padding-top: 0rem;
+        height: 20rem;
+    }
+    
+    .two-2 img{
+        max-width: 100%;
+        height: 90%;
+    }
+
+    
+        
+    .three{
+        width: 20rem;
+        margin-top: 5rem;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .two-4{
+        width: 20rem;
+        padding-top: 0;
+        height: 20rem;
+    }
+
+    .two-4 img{
+        max-width: 100%;
+        height: 99%;
+    }
+    .two-3{
+        padding-top: 0rem;
+        width: 20rem;
+        height: 16rem;
+        padding-left: 0;
+    }
+
+
+    .four{
+        width: 20rem;
+        margin-top: 3rem;
+        height: 30rem;
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: column-reverse;
+}
+
+.foot{
+    width: 100%;
+    height: 58rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+    .foot h1{
+        font-size: 25px;
+    }
+
+    .foot p{
+        margin-top: 1rem;
+        font-size: 25px;
+        width: 20rem;
+        color: black;
+        text-align: center;
+        font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+    
+    .diver{
+        display: flex;
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+
+        
+    .foot-1{
+        width: 20rem;
+        height: 30rem;
+        position: relative;
+        margin-top: 4rem;
+    }
+
+    .icon-1{
+        display: none;
+    }
+
+    .icon-2{
+        display: none;
+    }
+
+    .icon-5{
+        display: none;
+    }
+
+    .icon-12{
+        display: none;
+    }
+
+    .icon-13{
+        display: none;
+    }
+
+    .icon-9{
+        display: none
+    }
+
+    
+
+.icon-3{
+    width: 17%;
+    height: 3.4rem;
+    left: 3rem;
+    top: 2rem;
+    padding-left: 1rem;
+}
+
+
+.icon-4{
+    width: 17%;
+    height: 3.4rem;
+    left: 14rem;
+    top: 2rem;
+    padding-left: 1rem;
+}
+
+
+.icon-6{
+    width: 17%;
+    height: 3.4rem;
+    left: 0rem;
+    top: 12rem;
+    padding-left: 1rem;
+}
+
+
+.icon-7{
+    width: 30%;
+    height: 6rem;
+    position: absolute;
+    left: 7rem;
+    top: 11rem;
+}
+
+
+    
+.icon-8{
+    width: 17%;
+    height: 3.4rem;
+    left: 16.4rem;
+    top: 12rem;
+    padding-left: 1rem;
+}
+
+
+.icon-10{
+    width: 17%;
+    height: 3.4rem;
+    left: 3rem;
+    top: 22rem;
+    padding-left: 1rem;
+}
+
+.icon-11{
+    width: 17%;
+    height: 3.4rem;
+    left: 14rem;
+    top: 22rem;
+    position: absolute;
+    padding-top: 1rem; 
+    padding-left: 1rem;
+}
+
+.foooter{
+    width: 100%;
+    height: 73rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: rgb(248, 249, 254);
+    padding-top: 5rem;
+}
+
+.foooter-1{
+    background-color: rgb(20, 33, 77);
+    width: 20rem;
+    border-radius: 10px;
+    margin-top: 4rem;
+    height: 56rem;
+    padding: 20px;
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+
+.foooter-one{
+    width: 4rem;
+}
+
+
+.text-1 h4{
+    color: rgb(216, 213, 213);
+    font-size: 16px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.text-1 h2{
+    color: white;
+    margin-top: 0.3rem;
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-1 p {
+    font-size: 17px;
+    color: rgb(216, 213, 213);
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.text-2{
+    margin-top: 3.3rem;
+}
+
+.text-2 h4{
+    color: rgb(216, 213, 213);
+    font-size: 16px;
+    margin-top: 0.3rem;
+}
+
+.text-2 p {
+    font-size: 16px;
+}
+
+
+.text-3{
+    margin-top: 3.3rem;
+}
+
+
+.text-3 h4{
+    color: rgb(216, 213, 213);
+    font-size: 16px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.text-3 h2{
+    color: white;
+    margin-top: 0.3rem;
+    font-size: 20px;
+}
+
+.text-3 p {
+    font-size: 16px;
+}
+
+
+.footer-2 h1{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.dier{
+    display: flex;
+    margin-top: 2rem;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.btn-12{
+    color: #56e456;
+    background-color: #fff;
+    height: 50px;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px #fff;
+}
+.btn-13{
+    color: #0d6efd;
+    background-color: #fff;
+    height: 50px;
+    font-size: 16px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px #fff;
+}
+
+.btn-14{
+    color: #f03535;
+    background-color: #fff;
+    height: 50px;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px #fff;
+}
+.footer-2 p{
+    margin-top: 1rem;
+    font-size: 14px;
+    width: 17rem;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+footer{
+    width: 100%;
+    font-size: 14px;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 8rem;
+    padding-right: 8rem;
+    justify-content: space-between;
+    height: 8rem;
+    background-color: #0b2c4d;
+}
+
+
+.foot-items ul{
+    display: flex;
+    width: 11rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    color: rgb(216, 213, 213);
+    list-style-type: none;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;    
+}
+
+
+}
